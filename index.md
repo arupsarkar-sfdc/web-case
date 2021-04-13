@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-You can use the [editor on GitHub](https://github.com/arupsarkar-sfdc/web-case/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-### Markdown
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<input type=hidden name="orgid" value="00D5e000000HDxW">
+<input type=hidden name="retURL" value="https://arupsarkar-sfdc.github.io/web-case/">
 
-```markdown
-Syntax highlighted code block
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="arup.sarkar@salesforce.com">                                     -->
+<!--  ----------------------------------------------------------------------  -->
 
-# Header 1
-## Header 2
-### Header 3
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-- Bulleted
-- List
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-1. Numbered
-2. List
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-**Bold** and _Italic_ and `Code` text
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-[Link](url) and ![Image](src)
-```
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<input type="hidden"  id="external" name="external" value="1" /><br>
 
-### Jekyll Themes
+<input type="submit" name="submit">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arupsarkar-sfdc/web-case/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</form>
